@@ -2,6 +2,7 @@ package com.mycompany.capp.config;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -10,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-//@ComponentScan(basePackages = "com.mycompany")
+@ComponentScan(basePackages = "com.mycompany")
 public class SpringRootConfig {
 //    add DAO (data access object),services,datasources sende (email; messages),etc.
     @Bean

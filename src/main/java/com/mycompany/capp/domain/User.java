@@ -6,13 +6,8 @@ package com.mycompany.capp.domain;
  */
 public class User {
     private Integer userid,role,loginStatus;
-    private String name,phone,address,loginName,password;
+    private String name,phone,address,loginName,email,password;
 
-    public User() {
-    }
-
-    
-    
     public Integer getUserid() {
         return userid;
     }
@@ -69,6 +64,14 @@ public class User {
         this.loginName = loginName;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -76,5 +79,10 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public User() {
+    }
+
+    
 
 }
