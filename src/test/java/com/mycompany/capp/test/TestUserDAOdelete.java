@@ -15,7 +15,6 @@ public class TestUserDAOdelete {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
         UserDAO userDAO = ctx.getBean(UserDAO.class);
         User u = new User();
-        // ths user later wll be taken from nput class
         //get id by input user later
         userDAO.delete(2);
         
