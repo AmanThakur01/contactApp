@@ -76,7 +76,8 @@ public class UserDAOImpl extends BaseDAO implements UserDAO{
 
     @Override
     public User findById(Integer id) {
-         
+         User u = new User();
+         return u;
     }
 
     @Override
